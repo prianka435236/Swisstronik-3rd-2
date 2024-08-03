@@ -12,7 +12,7 @@ const sendShieldedTransaction = async (signer, destination, data, value) => {
 };
 
 async function main() {
-  const contractAddress = "wget https://raw.githubusercontent.com/dxzenith/Swisstronic-Script/main/erc20-token.sh && chmod +x erc20-token.sh && ./erc20-token.sh";
+  const contractAddress = "0x43369152A0F6Fb765FeA25a94180ACfB01f434A4";
   const [signer] = await hre.ethers.getSigners();
 
   const contractFactory = await hre.ethers.getContractFactory("TestToken");
